@@ -1,10 +1,27 @@
-async function listVideos() {
+async function getVideos() {
   const connection = await fetch("http://localhost:3000/videos");
   const objectCon = await connection.json();
   return objectCon;
 }
 
-export const connectApi = { listVideos };
+async function postVideo(video) {
+  const connection = await fetch("http://localhost:3000/videos", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(video),
+  });
+
+  return await connection.json();
+}
+
+async function searchVideo(busca) {
+  const connection = await fetch(`http://localhost:3000/videos?q=${busca}`);
+  return await connection.json();
+}
+
+export const connectApi = { getVideos, postVideo, searchVideo };
 
 //const http = new XMLHttpRequest();
 //

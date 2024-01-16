@@ -1,6 +1,12 @@
 import { connectApi } from "./api.js";
 
 const lista = document.querySelector("[data-lista]");
+const buscaInput = document.querySelector("[data-search-input]");
+const buscaButton = document.querySelector("[data-search-button]");
+
+listVideo(connectApi.getVideos());
+
+buscaInput.addEventListener("input", buscaVideo);
 
 function constroiCard(titulo, descricao, url, imagem) {
   const video = document.createElement("li");
@@ -14,8 +20,8 @@ function constroiCard(titulo, descricao, url, imagem) {
   return video;
 }
 
-async function listVideo() {
-  const listaApi = await connectApi.listVideos();
+async function listVideo(videos) {
+  let listaApi = await videos;
   listaApi.forEach((element) => {
     lista.appendChild(
       constroiCard(
@@ -28,4 +34,8 @@ async function listVideo() {
   });
 }
 
-listVideo();
+async function buscaVideo(termo) {
+  let resultado = await connectApi.searchVideo(termo);
+  lista = document.innerHTML = "";
+  listVideo(resultado);
+}

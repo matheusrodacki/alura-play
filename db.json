@@ -1,56 +1,56 @@
 {
   "videos": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Conhecendo a linguagem Go | Hipsters.Talks",
       "descricao": "3 mil visualizações",
       "url": "https://www.youtube.com/embed/y8FeZMv37WU",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Desmistificando mobile - Linguagens e Frameworks",
       "descricao": "1,5 mil visualizações",
       "url": "https://www.youtube.com/embed/fmu1LQvZhms",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Orientação a objetos com Roberta Arcoverde | #Hipster...",
       "descricao": "30 mil visualizações",
       "url": "https://www.youtube.com/embed/jpuJ1qrluoU",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Linguagens e ferramentas usadas em Ciência de Dados...",
       "descricao": "2,5 mil visualizações",
       "url": "https://www.youtube.com/embed/h83e1aAM5xQ",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "Reencontrando a paixão por programar: Beatriz Ramerindo",
       "descricao": "1,2 mil visualizações",
       "url": "https://www.youtube.com/embed/CnB3eLTrkn4",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 6,
+      "id": "6",
       "titulo": "Híbridos: Flutter e React Native | Desmistificando..",
       "descricao": "1,6 mil visualizações",
       "url": "https://www.youtube.com/embed/vf9P_PycgRw",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 7,
+      "id": "7",
       "titulo": "Data Science na prática- com Jéssika Ribeiro do Grupo...",
       "descricao": "3,2 mil visualizações",
       "url": "https://www.youtube.com/embed/Nts3P35mHzE",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 8,
+      "id": "8",
       "titulo": "baNaNa | Memes do JavaScript #2",
       "descricao": "1,2 mil visualizações",
       "url": "https://www.youtube.com/embed/HBVCsBtsmzA",
@@ -61,28 +61,49 @@
       "descricao": "1 mil visualizações",
       "url": "https://www.youtube.com/embed/z43rcfjXOxU",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-      "id": 9
+      "id": "9"
     },
     {
       "titulo": "Educação coorporativa",
       "descricao": "9 mil visualizações",
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-      "id": 10
+      "id": "10"
     },
     {
       "titulo": "Arquitetura de sistemas com Fabio Akita | #HipstersPontoTube",
       "descricao": "4 mil visualizações",
       "url": "https://www.youtube.com/embed/oedWxgAZc2A?si=WFCHOkVP1cLTxBGH",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-      "id": 11
+      "id": "11"
     },
     {
       "titulo": "Tutorial FRAMER: Como CRIAR um SITE com IA?",
       "descricao": "7 mil visualizações",
       "url": "https://www.youtube.com/embed/IXCejzBC21Q",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true",
-      "id": 12
+      "id": "12"
+    },
+    {
+      "id": "8c70",
+      "titulo": "Curso de Ciência da Computação | #HipstersPontoTube",
+      "descricao": "0 mil vizualizações",
+      "url": "https://www.youtube.com/embed/Kkg1cjVoYq4",
+      "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+    },
+    {
+      "id": "81e4",
+      "titulo": "Curso de Engenharia da Computação | #HipstersPontoTube",
+      "descricao": "3 mil vizualizações",
+      "url": "https://www.youtube.com/embed/b4P0g7crNTY",
+      "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
+    },
+    {
+      "id": "14c2",
+      "titulo": "Guia de Carreira C# (C SHARP) | #HipstersPontoTube",
+      "descricao": "5 mil vizualizações",
+      "url": "https://www.youtube.com/embed/RtwvUNvabPA",
+      "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     }
   ]
 }
