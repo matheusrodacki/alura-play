@@ -6,7 +6,14 @@ const buscaButton = document.querySelector("[data-search-button]");
 
 listVideo(connectApi.getVideos());
 
-buscaInput.addEventListener("input", buscaVideo);
+buscaInput.addEventListener("input", () => {
+  buscaVideo(buscaInput.value);
+});
+
+buscaButton.addEventListener("click", (evento) => {
+  evento.preventDefault();
+  buscaVideo(buscaInput.value);
+});
 
 function constroiCard(titulo, descricao, url, imagem) {
   const video = document.createElement("li");
@@ -21,7 +28,8 @@ function constroiCard(titulo, descricao, url, imagem) {
 }
 
 async function listVideo(videos) {
-  let listaApi = await videos;
+  lista.innerHTML = "";
+  const listaApi = await videos;
   listaApi.forEach((element) => {
     lista.appendChild(
       constroiCard(
@@ -36,6 +44,5 @@ async function listVideo(videos) {
 
 async function buscaVideo(termo) {
   let resultado = await connectApi.searchVideo(termo);
-  lista = document.innerHTML = "";
   listVideo(resultado);
 }
