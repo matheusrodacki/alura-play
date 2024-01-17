@@ -28,21 +28,31 @@ function constroiCard(titulo, descricao, url, imagem) {
 }
 
 async function listVideo(videos) {
-  lista.innerHTML = "";
-  const listaApi = await videos;
-  listaApi.forEach((element) => {
-    lista.appendChild(
-      constroiCard(
-        element.titulo,
-        element.descricao,
-        element.url,
-        element.imagem
-      )
-    );
-  });
+  try {
+    const listaApi = await videos;
+    listaApi.forEach((element) => {
+      lista.appendChild(
+        constroiCard(
+          element.titulo,
+          element.descricao,
+          element.url,
+          element.imagem
+        )
+      );
+    });
+  } catch (error) {
+    lista.innerHTML =
+      "<h2 class='mensagem__titulo'>Não foi possivel carregar a lista de vídeos :( </h2>";
+    console.log(error);
+  }
 }
 
 async function buscaVideo(termo) {
-  let resultado = await connectApi.searchVideo(termo);
+  const resultado = await connectApi.searchVideo(termo);
+  lista.innerHTML = "";
+  if (resultado.length === 0) {
+    lista.innerHTML =
+      "<h2 class='mensagem__titulo'>Não encontrado nenhum vídeo com esse termo!</h2>";
+  }
   listVideo(resultado);
 }

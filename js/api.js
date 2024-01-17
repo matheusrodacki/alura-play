@@ -12,6 +12,9 @@ async function postVideo(video) {
     },
     body: JSON.stringify(video),
   });
+  if (!connection.ok) {
+    throw new Error("Não foi posível enviar o vídeo");
+  }
 
   return await connection.json();
 }
